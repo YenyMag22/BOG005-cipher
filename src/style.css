@@ -1,0 +1,45 @@
+body {
+background-color: rgb(232, 232, 232);    
+}
+
+#logo {
+    background-color: rgb(255, 255, 252);
+    float:left;
+    height: 80px;
+    width: 40%;
+}
+
+#menu {
+background-color: white;    
+width: 60%;
+height: 80px;
+display: inline-block;
+margin: 0 auto ;
+}
+#contenedor {
+    background-color: rgb(255, 255, 255);
+    width: 1000px;
+    margin: 20px auto 20px auto;
+    
+}
+#texto {
+    width: 50%;
+    background-color: aliceblue;
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 60px;
+    float: left;
+
+    }
+    #imagen {
+        float: right;
+        width: 40%;
+        background-color: blueviolet;
+
+
+    }
+    .borra {
+        clear: both;
+    }
+
