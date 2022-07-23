@@ -1,7 +1,12 @@
 body {
-background-color: rgb(232, 232, 232);    
+background-color: rgb(232, 232, 232);  
+font-family:helvetica;
 }
+header {
+    display: flex;
+    align-items: center;
 
+}
 #logo {
     background-color: rgb(255, 255, 252);
     float:left;
