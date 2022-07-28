@@ -4,20 +4,25 @@ if (btncifrar) btncifrar.addEventListener("click", fncifrar);
 function fncifrar() {
   let mensaje = document.getElementById("cifrar").value;
   let desplazamiento = parseInt(document.getElementById("desplazamiento").value);
-  console.log(mensaje, desplazamiento);
-  console.log(cipher.encode(desplazamiento, mensaje));
+  let mensajeCifrado = cipher.encode(desplazamiento, mensaje);
+  //console.log(mensaje, desplazamiento);
+  console.log(mensajeCifrado);
+  document.getElementById("cifrado").innerHTML = mensajeCifrado;
 
 }
-let btndecifrar = document.getElementById("btndecifrar");
-if (btndecifrar) btndecifrar.addEventListener("click", fndecifrar);
-function fndecifrar() {
-  let mensaje = document.getElementById("decifrar").value;
-  let desplazamiento = document.getElementById("desplazamiento").value;
-  alert("mensaje, desplazamiento");
+let btndescifrar = document.getElementById("btndescifrar");
+if (btndescifrar) btndescifrar.addEventListener("click", fndescifrar);
+function fndescifrar() {
+  let mensaje = document.getElementById("descifrar").value;
+  let desplazamiento = parseInt(document.getElementById("desplazamiento").value);
+  let mensajeDescifrado = cipher.decode(desplazamiento, mensaje);
+  //console.log(mensaje,desplazamiento);
+  //alert("mensaje, desplazamiento");
+  console.log(mensajeDescifrado);
+  document.getElementById("descifrado").innerHTML = mensajeDescifrado;
+
 
 }
-
-
 
 
 

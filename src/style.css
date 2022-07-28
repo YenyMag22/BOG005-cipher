@@ -1,50 +1,158 @@
 body {
-background-color: rgb(232, 232, 232);  
-font-family:helvetica;
+    background-color: rgb(232, 232, 232);
+    font-family: helvetica;
 }
+
 header {
     display: flex;
     align-items: center;
 
 }
-#logo {
+
+.logo {
     background-color: rgb(255, 255, 252);
-    float:left;
-    height: 80px;
+    float: left;
+    height: 30px;
     width: 40%;
 }
 
 #menu {
-background-color: white;    
-width: 60%;
-height: 80px;
-display: inline-block;
-margin: 0 auto ;
+    width: 60%;
+    height: 30px;
 }
+
+#nav {
+    background-color: rgb(204, 4, 4);
+    overflow: hidden;
+}
+
+#nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* al pasar por encima del link */
+#nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* link activo */
+#nav a.active {
+    background-color: #680404;
+    color: white;
+}
+
 #contenedor {
     background-color: rgb(255, 255, 255);
     width: 1000px;
     margin: 20px auto 20px auto;
-    
+
+}
+
+#contenido1 {
+    width: 100%;
+    background-color: aliceblue;
+    padding-top: 20px;
+}
+#contenido-cifrar {
+    width: 100%;
+    background-color: aliceblue;
+    padding-top: 20px;
+    text-align: center;
 }
 #texto {
-    width: 50%;
-    background-color: aliceblue;
+    width: 55%;
     padding-top: 60px;
-    padding-left: 10px;
+    padding-left: 20px;
     padding-right: 10px;
     padding-bottom: 60px;
     float: left;
 
-    }
-    #imagen {
-        float: right;
-        width: 40%;
-        background-color: blueviolet;
+}
 
+#imagen {
+    float: right;
+    width: 40%;
+}
 
-    }
-    .borra {
-        clear: both;
-    }
+.borra {
+    clear: both;
+}
+#contenido2 {
+    width: 100%;
+    background-color: rgb(255, 215, 195);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+#escribir {
+    width: 50%;
+text-align: center;
 
+    float: left;
+}
+#escribir h2 {
+    font-size: 22px;
+    color: rgb(156, 17, 17);
+}
+#leer h2 {
+    font-size: 22px;
+    color: rgb(156, 17, 17);
+}
+
+#leer {
+    width: 50%;
+    text-align: center;
+    float: right;
+}
+button {
+    font-size: 20px;
+    text-decoration: none;
+}
+button a {
+    font-size: 20px;
+    text-decoration: none;
+}
+footer{
+    background-color: black;
+    color: white;
+    height: 40px;
+}
+#btncifrar {
+    padding: 5px 70px;
+    margin: 20px 20px;
+    color: #ffffff;
+    background-color: #e82e2e;
+    border-radius: 15px;
+    border: 0;
+}
+#cifrar {
+    padding: 10px 10px;
+    margin: 10px 10px;
+    color: #424242;
+    background-color: #f6dada;
+    border-radius: 15px;
+    border: 0;
+}
+#desplazamiento {
+    padding: 10px 10px;
+    margin: 10px 10px;
+    color: #060606;
+    background-color: #f8ebeb;
+    border-radius: 15px;
+    border: 0;
+
+}
+
+#cifrado {
+    padding: 10px 10px;
+    margin: 10px 10px;
+    color: #424242;
+    background-color: #f6dada;
+    border-radius: 15px;
+    border: 0;
+}

@@ -11,42 +11,54 @@
 <body>
   <div id="contenedor">
     <header>
-      <div id="logo">
-        <img src="img/logo-corazonllave.jpg" width="120px" height="">
-
+      <div class="logo">
+        <img src="img/logo-corazonllave.jpg" width="" height="50px">
       </div>
       <div id="menu">
-        <button><a href="index.html"> Inicio</a></button>
-        <button><a href="escribir.html"> Escribir </a></button>
-        <button><a href="leer.html">Leer</a></button>
+        <div id="nav">
+          <a href="index.html">Inicio</a>
+          <a class="active" href="escribir.html"> Escribir</a>
+          <a href="leer.html">Leer</a>
+        </div>
       </div>
     </header>
-    <br class="borrar">
-    <div id="texto">
-      <h1>LOCKED LOVE</h1>
-      <h2>Crear Mensajes Cifrados</h2>
-
-      <div id="logo">
-        <img src="img/logo-corazonllave.jpg" width="120px" height="">
-      </div>
-      <br class="borrar">
-
-
-
-      <p>
-        <label for="mensaje">
+     <br>
+    <div id="contenido-cifrar">
+      <img src="img/logo-corazonllave.jpg" width="120px" height="30px">
+      <h1>CREAR MENSAJES CIFRADOS</h1>
+      
           Introduce el mensaje que deseas encriptar
-        </label>
-        <br />
-        <textarea name="mensaje" id="cifrar" rows="10" cols="50"></textarea>
+      
+      <br>
+      <textarea name="mensaje" id="cifrar" rows="5" cols="50"></textarea>
+      <br>
+          Número de desplazamiento:
+    
         <input id="desplazamiento">
-        </br>
-        <button id="btncifrar">Cifrar</button>
-        <script src="script.js" type="module"></script>
-</body>
+        <br>
+      <button id="btncifrar">Cifrar</button>
+      <br>
+      Este es tu mensaje encriptado ¡Compartelo con tu love!
+      <br>
+      <textarea id="cifrado" rows="5" cols="50"></textarea>
 
-<footer>
-  <t>©Yeny Espinosa 2022</t>
-</footer>
+
+
+
+
+
+    </div>
+
+
+   
+
+
+
+    <footer>
+      <center>©Yeny Espinosa 2022</center>
+    </footer>
+  </div>
+  <script src="script.js" type="module"></script>
+</body>
 
 </html>
